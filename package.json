@@ -1,0 +1,29 @@
+{
+  "name": "js_weatherApp",
+  "version": "1.0.0",
+  "description": "> The objective of this project is to connect to an Online Weather Forecast API\r \tto retrieve data based on the users input and rendering the API response\r \timplementing Javascript Promises combined with Async/Await.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noomdalv/js_weatherApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noomdalv/js_weatherApp/issues"
+  },
+  "homepage": "https://github.com/noomdalv/js_weatherApp#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
