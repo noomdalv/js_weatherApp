@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"hi\")\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("console.log(\"hi\")\r\n\r\nconst cityName = document.getElementById('cityInput');\r\nconst searchBtn = document.getElementById('searchBtn');\r\nconst cityInfo = document.getElementById('cityInfo');\r\nconst tempInfo = document.getElementById('tempInfo');\r\n\r\nconst getFahrenheit = (tempCelsius) => {\r\n\tlet tempFahrenheit = (tempCelsius / (5/9)) + 32;\r\n\tconsole.log(tempFahrenheit.toFixed(2) + \" °F\");\r\n}\r\n\r\nconst getCelsius = (tempFahrenheit) => {\r\n\tlet tempCelsius = (tempFahrenheit - 32) * (5/9);\r\n\tconsole.log(tempCelsius.toFixed(2) + \" °C\");\r\n}\r\n\r\ngetFahrenheit(5.15);\r\ngetCelsius(41.27);\r\n\r\nconst getWeather = async (city) => {\r\n\tconst response = await fetch(\"http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=c414b36c42d82ca02be257a1553e41c6&units=metric&q=\" + cityName.value);\r\n\tconst weatherData = await response.json();\r\n\tconsole.log(weatherData);\r\n\tcityInfo.innerHTML = weatherData.city.name;\r\n\ttempCelsius = weatherData.list[0].main.temp;\r\n\ttempInfo.innerHTML = tempCelsius + \" °C\";\r\n}\r\n\r\nsearchBtn.addEventListener(\"click\", () => {\r\n\tgetWeather(cityName);\r\n})\r\n\r\ncityName.addEventListener(\"keydown\", () => {\r\n\tif (event.key === \"Enter\") {\r\n    event.preventDefault();\r\n\t\tconsole.log(\"zzzzzz\")\r\n\t\tsearchBtn.click();\r\n\t}\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
