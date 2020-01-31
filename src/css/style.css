@@ -65,6 +65,17 @@ i {
 	color: #5097D2;
 }
 
+#errorMsg {
+	visibility: hidden;
+	width: max-content;
+	margin: 10px auto;
+	padding: 10px;
+	border: solid #3B8AD6 1px;
+	border-radius: 2px;
+	background-color: #070824;
+	color: white;
+}
+
 /* DISPLAY WEATHER INFO CONTAINER */
 
 
@@ -72,7 +83,8 @@ i {
 	height: max-content;
 	width: max-content;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 10px;
+	padding: 20px 10px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 1fr;
@@ -81,6 +93,7 @@ i {
 	background-color: rgba(7,12,41, .6);
 	border: solid #3B8AD6 2px;
 	color: white;
+	visibility: hidden;
 }
 
 #displayInfo > div {
@@ -99,13 +112,29 @@ i {
 }
 
 #statusImg {
-	margin-top: -10px;
+	margin-top: -15px;
 }
 
 #displayInfo h2, p {
 	margin: 0;
 }
 
+#displayInfo p {
+	margin-bottom: 5px;
+}
+
 #displayInfo h3 {
 	margin-top: 30px;
+}
+
+#switchTempBtn {
+	background-color: #070824;
+	padding: 5px;
+	color: #97D5F4;
+	border: solid #3B8AD6 1px;
+	border-radius: 2px;
+}
+
+#switchTempBtn:hover {
+	border: solid #97D5F4 1px;
 }
