@@ -31,7 +31,7 @@ h5 {
 }
 
 #cityInput {
-	width: 300px;
+	width: 280px;
 	height: 40px;
 	padding-left: 10px;
 	color: white;
@@ -67,11 +67,45 @@ i {
 
 /* DISPLAY WEATHER INFO CONTAINER */
 
+
 #displayInfo {
+	height: max-content;
+	width: max-content;
 	margin: auto;
-	height: 200px;
-	width: 400px;
-	background-color: #070C29;
-	border: solid white 1px;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	justify-content: center;
+	background-color: rgba(7,12,41, .6);
+	border: solid #3B8AD6 2px;
 	color: white;
+}
+
+#displayInfo > div {
+	text-align: center;
+	padding: 10px 10px;
+}
+
+#divStatusImg {
+	display: grid;
+	justify-content: center;
+	margin: auto;
+	height: 80px;
+	width: 80px;
+	background: rgba(92,149,181, .6);
+	border-radius: 50%;
+}
+
+#statusImg {
+	margin-top: -10px;
+}
+
+#displayInfo h2, p {
+	margin: 0;
+}
+
+#displayInfo h3 {
+	margin-top: 30px;
 }
