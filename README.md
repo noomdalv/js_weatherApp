@@ -1,7 +1,7 @@
 # Project: Javascript Restaurant Page
 
 > The objective of this project is to connect to an Online Weather Forecast API
-	to retrieve data based on the users input and rendering the API response
+	to retrieve data based on the users city input and rendering the API response dinamically
 	implementing Javascript Promises combined with Async/Await.
 
 ## Built With
@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/noomdalv/js_weatherApp/api_config/dist/index.html)
 
 
 ## Getting Started
