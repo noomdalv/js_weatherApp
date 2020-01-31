@@ -47,7 +47,7 @@ const displayWeatherData = (data) => {
 };
 
 const getWeather = async () => {
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=c414b36c42d82ca02be257a1553e41c6&units=metric&q=${cityName.value}`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=c414b36c42d82ca02be257a1553e41c6&units=metric&q=${cityName.value}`);
   const weatherData = await response.json();
   await displayWeatherData(weatherData);
 };
