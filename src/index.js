@@ -10,22 +10,22 @@ const switchTempBtn = document.getElementById('switchTempBtn');
 const statusInfo = document.getElementById('statusInfo');
 const statusImg = document.getElementById('statusImg');
 const windInfo = document.getElementById('windInfo');
-let temp; let
+let temperature; let
   tempUnit;
 
 const getFahrenheit = (tempCelsius) => {
   const tempFahrenheit = (tempCelsius / (5 / 9)) + 32;
-  temp = tempFahrenheit.toFixed(2);
+  temperature = tempFahrenheit.toFixed(2);
   tempUnit = 'F';
-  tempInfo.innerHTML = (`${temp} °F`);
+  tempInfo.innerHTML = (`${temperature} °F`);
   switchTempBtn.innerHTML = 'Switch to °C';
 };
 
 const getCelsius = (tempFahrenheit) => {
   const tempCelsius = (tempFahrenheit - 32) * (5 / 9);
-  temp = tempCelsius.toFixed(2);
+  temperature = tempCelsius.toFixed(2);
   tempUnit = 'C';
-  tempInfo.innerHTML = (`${temp} °C`);
+  tempInfo.innerHTML = (`${temperature} °C`);
   switchTempBtn.innerHTML = 'Switch to °F';
 };
 
@@ -38,7 +38,7 @@ const displayWeatherData = (data) => {
     statusInfo.innerHTML = data.list[0].weather[0].description;
     statusImg.src = `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
     tempInfo.innerHTML = `${data.list[0].main.temp} °C`;
-    temp = data.list[0].main.temp;
+    temperature = data.list[0].main.temp;
     tempUnit = 'C';
   } else if (data.cod === '404') {
     errorMsg.style.visibility = 'visible';
@@ -67,8 +67,8 @@ cityName.addEventListener('keydown', (event) => {
 
 switchTempBtn.addEventListener('click', () => {
   if (tempUnit === 'C') {
-    getFahrenheit(temp);
+    getFahrenheit(temperature);
   } else if (tempUnit === 'F') {
-    getCelsius(temp);
+    getCelsius(temperature);
   }
 });
