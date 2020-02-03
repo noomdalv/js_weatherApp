@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+  <title>Project: Weather App</title>
+	<link rel="stylesheet" href="../src/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a69062caeb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="title">
+			<h5>The Weather App</h5>
+		</div>
+
+		<div id="searchBox">
+			<input id="cityInput" type="text" placeholder="Enter a city name...">
+				<button id="searchBtn"><i class="fas fa-angle-double-right"></i></button>
+			</input><br>
+  		<h4 id="errorMsg">City not found.</h4>
+		</div>
+
+		<div id="displayInfo">
+			<div id="displayInfoCity">
+				<h2>City</h2>
+				<h3 id="cityInfo"></h3>
+			</div>
+
+			<div id="displayInfoTemperature">
+				<h2>Temperature</h2>
+				<h3 id="tempInfo"></h3>
+				<button id="switchTempBtn">Switch to °F</button>
+			</div>
+
+			<div id="displayInfoStatus">
+				<h2>Status</h2>
+				<p id="statusInfo"></p>
+				<div id="divStatusImg"><img id="statusImg"></div>
+			</div>
+
+			<div id="displayInfoWind">
+				<h2>Wind</h2>
+				<h3 id="windInfo"></h3>
+			</div>
+		</div>
+	</div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
