@@ -1,0 +1,140 @@
+* {
+	font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+	background-color: #0e0e0e;
+}
+
+#container {
+	margin: auto;
+	width: 95%;
+	height: 700px;
+	background-image: url('../img/earth_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+h5 {
+	margin: 0;
+	padding: 30px 60px;
+	color: white;
+	font-size: 50px;
+}
+
+/* SEARCH BAR */
+
+#searchBox {
+	margin: 100px 0 0 100px;
+	width: max-content;
+}
+
+#cityInput {
+	width: 280px;
+	height: 40px;
+	padding-left: 10px;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 3px;
+	border: solid #3B8AD6 2px;
+	border-radius: 2px;
+	background-color: #070824;
+}
+
+#cityInput:hover {
+	border: solid #97D5F4 2px;
+}
+
+::placeholder {
+	font-size: 16px;
+	color: #c6c6c6;
+}
+
+#searchBtn {
+	position: relative;
+	top: 5px;
+	margin-left: -45px;
+	font-weight: 600;
+	background-color: #070824;
+	border: none;
+}
+
+i {
+	font-size: 30px;
+	color: #5097D2;
+}
+
+#errorMsg {
+	visibility: hidden;
+	width: max-content;
+	margin: 10px auto;
+	padding: 10px;
+	border: solid #3B8AD6 1px;
+	border-radius: 2px;
+	background-color: #070824;
+	color: white;
+}
+
+/* DISPLAY WEATHER INFO CONTAINER */
+
+
+#displayInfo {
+	height: max-content;
+	width: max-content;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	justify-content: center;
+	background-color: rgba(7,12,41, .6);
+	border: solid #3B8AD6 2px;
+	color: white;
+	visibility: hidden;
+}
+
+#displayInfo > div {
+	text-align: center;
+	padding: 10px 10px;
+}
+
+#divStatusImg {
+	display: grid;
+	justify-content: center;
+	margin: auto;
+	height: 80px;
+	width: 80px;
+	background: rgba(92,149,181, .6);
+	border-radius: 50%;
+}
+
+#statusImg {
+	margin-top: -15px;
+}
+
+#displayInfo h2, p {
+	margin: 0;
+}
+
+#displayInfo p {
+	margin-bottom: 5px;
+}
+
+#displayInfo h3 {
+	margin-top: 30px;
+}
+
+#switchTempBtn {
+	background-color: #070824;
+	padding: 5px;
+	color: #97D5F4;
+	border: solid #3B8AD6 1px;
+	border-radius: 2px;
+}
+
+#switchTempBtn:hover {
+	border: solid #97D5F4 1px;
+}
