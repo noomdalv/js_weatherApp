@@ -1,4 +1,4 @@
-# Project: Javascript Restaurant Page
+# Project: The Weather App
 
 > The objective of this project is to connect to an Online Weather Forecast API
 	to retrieve data based on the users city input and rendering the API response dinamically
@@ -8,6 +8,9 @@
 
 - HTML/CSS
 - Javascript
+
+## App screenshot
+![screenshot](https://i.imgur.com/hdB9JuU.jpg)
 
 ## Live Demo
 
@@ -26,6 +29,14 @@ Open a terminal window, go to the location you'd like to add the project and the
 git clone https://github.com/noomdalv/js_weatherApp.git
 ```
 
+```console
+cd js_weatherApp
+```
+
+```console
+npm start
+```
+
 ## Author
 
 👤 **Vladimir Luna**
@@ -39,5 +50,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 ​
